@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "tema": "Intervención logopédica en trastornos del lenguaje en niños con TEA",
+    "autor": "Martínez García, Ana",
+    "año": 2022,
+    "universidad": "Universidad Complutense de Madrid",
+    "enlace": "https://repositorio.ucm.es/handle/123456789/12345",
+    "descarga": "/tesis/tesis-1.pdf",
+    "tipo": "doctoral"
+  },
+  {
+    "id": 2,
+    "tema": "Eficacia de la terapia miofuncional en disfagia orofaríngea",
+    "autor": "López Sánchez, Carlos",
+    "año": 2021,
+    "universidad": "Universidad de Barcelona",
+    "enlace": "https://diposit.ub.edu/dspace/handle/2445/123456",
+    "descarga": "/tesis/tesis-2.pdf",
+    "tipo": "doctoral"
+  },
+  {
+    "id": 3,
+    "tema": "Nuevos enfoques en la rehabilitación de la afasia post-ictus",
+    "autor": "Rodríguez Fernández, María",
+    "año": 2023,
+    "universidad": "Universidad de Sevilla",
+    "enlace": "https://idus.us.es/handle/11441/123456",
+    "descarga": "/tesis/tesis-3.pdf",
+    "tipo": "doctoral"
+  },
+  {
+    "id": 4,
+    "tema": "Evaluación de programas de intervención temprana en dislalias",
+    "autor": "Gómez Pérez, Javier",
+    "año": 2020,
+    "universidad": "Universidad Autónoma de Madrid",
+    "enlace": "https://repositorio.uam.es/handle/10486/1234567",
+    "descarga": "/tesis/tesis-4.pdf",
+    "tipo": "master"
+  },
+  {
+    "id": 5,
+    "tema": "Análisis comparativo de métodos de diagnóstico en disfonías",
+    "autor": "Fernández Díaz, Laura",
+    "año": 2021,
+    "universidad": "Universidad de Valencia",
+    "enlace": "https://roderic.uv.es/handle/10550/1234567",
+    "descarga": "/tesis/tesis-5.pdf",
+    "tipo": "doctoral"
+  }
+]

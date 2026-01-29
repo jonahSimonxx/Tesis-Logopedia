@@ -10,7 +10,7 @@ const MenuBar = () => {
     { path: "/introduccion", label: "Introducción" },
     { path: "/metodologia", label: "Metodología" },
     { path: "/resultados", label: "Resultados" },
-    { path: "/bibliografia", label: "Bibliografía" },
+    { path: "/tesis_consultadas", label: "Bibliografía" },
     { path: "/conclusiones", label: "Conclusiones" },
   ]
 
