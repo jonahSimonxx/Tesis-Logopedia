@@ -72,17 +72,19 @@ export default function TesisCard({ tesis, onConsultar, onDescargar }: TesisCard
               <span>Ver Tesis</span>
             </button>
             
-            <button
-              onClick={() => onDescargar(tesis)}
-              className="inline-flex items-center justify-center gap-2 
-                       border-2 border-gray-300 hover:border-blue-500 
-                       hover:bg-blue-50 text-gray-700 hover:text-blue-700 
-                       font-medium py-3 px-4 rounded-lg transition-all duration-200"
-              aria-label={`Descargar PDF de: ${tesis.tema}`}
-              title={`Descargar archivo PDF: ${tesis.tema}`}
-            >
-              <span>Descargar PDF</span>
-            </button>
+            <a
+  href={tesis.descarga}
+  download
+  className="inline-flex items-center justify-center gap-2
+           border-2 border-gray-300 hover:border-blue-500
+           hover:bg-blue-50 text-gray-700 hover:text-blue-700
+           font-medium py-3 px-4 rounded-lg transition-all duration-200"
+  aria-label={`Descargar PDF de: ${tesis.tema}`}
+  title={`Descargar archivo PDF: ${tesis.tema}`}
+>
+  <Download className="w-5 h-5" />
+  <span>Descargar PDF</span>
+</a>
           </div>
         </div>
       </div>
