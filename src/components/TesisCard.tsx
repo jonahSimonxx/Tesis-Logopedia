@@ -69,7 +69,6 @@ export default function TesisCard({ tesis, onConsultar, onDescargar }: TesisCard
               aria-label={`Ver tesis: ${tesis.tema}`}
               title={`Abrir enlace de la tesis: ${tesis.tema}`}
             >
-              <ExternalLink className="w-5 h-5" />
               <span>Ver Tesis</span>
             </button>
             
@@ -82,7 +81,6 @@ export default function TesisCard({ tesis, onConsultar, onDescargar }: TesisCard
               aria-label={`Descargar PDF de: ${tesis.tema}`}
               title={`Descargar archivo PDF: ${tesis.tema}`}
             >
-              <Download className="w-5 h-5" />
               <span>Descargar PDF</span>
             </button>
           </div>
