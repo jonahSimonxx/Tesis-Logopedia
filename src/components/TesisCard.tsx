@@ -62,7 +62,7 @@ export default function TesisCard({ tesis, onConsultar, onDescargar }: TesisCard
           {/* Botones de acción */}
           <div className="flex flex-col gap-3 md:w-48">
             <button
-              onClick={() => onConsultar(tesis)}
+              onClick={() => window.open(tesis.descarga, '_blank')}
               className="inline-flex items-center justify-center gap-2 
                        bg-blue-600 hover:bg-blue-700 text-white 
                        font-medium py-3 px-4 rounded-lg transition-colors duration-200"

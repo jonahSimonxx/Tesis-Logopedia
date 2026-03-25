@@ -52,9 +52,6 @@ export default function TesisList({
         <h3 className="text-2xl font-bold text-gray-900 mb-2">
           No hay tesis disponibles
         </h3>
-        <p className="text-gray-600">
-          Añade tesis al archivo JSON para comenzar
-        </p>
       </div>
     )
   }
