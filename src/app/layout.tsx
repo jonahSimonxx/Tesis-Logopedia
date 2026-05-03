@@ -1,9 +1,21 @@
+// app/layout.tsx
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Italiana, DM_Sans } from 'next/font/google'
 import './globals.css'
-import MenuBar from '../components/MenuBar'
+import MenuBar from '@/components/MenuBar'
+import ThemeToggle from '@/components/ThemeToggle'
+import RippleProvider from '@/components/RippleProvider'
 
-const inter = Inter({ subsets: ['latin'] })
+const italiana = Italiana({
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-display',
+})
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  variable: '--font-body',
+})
 
 export const metadata: Metadata = {
   title: 'Apoyo para la tesis',
@@ -16,18 +28,25 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es">
-      <body className={`${inter.className} bg-gray-50 min-h-screen`}>
-        <MenuBar />
-        <main className="pt-4">
-          {children}
-        </main>
-        <footer className="mt-16 bg-gray-900 text-white py-8">
-          <div className="max-w-7xl mx-auto px-4 text-center">
-            <p className="text-xl font-semibold mb-2">Tesis de Logopedia</p>
-            <p className="text-gray-400">© {new Date().getFullYear()} - Melissa</p>
-          </div>
-        </footer>
+    <html lang="es" className={`${italiana.variable} ${dmSans.variable}`}>
+      <body className={dmSans.className}>
+        {/* Fondo animado del kit */}
+        <div className="scene" aria-hidden="true">
+          <div className="scene__blob scene__blob--1"></div>
+          <div className="scene__blob scene__blob--2"></div>
+          <div className="scene__blob scene__blob--3"></div>
+        </div>
+
+        <ThemeToggle />
+        <RippleProvider>
+          <MenuBar />
+          <main>{children}</main>
+          <footer className="footer">
+            <p className="footer__text">
+              © {new Date().getFullYear()} - Melissa · Tesis de Logopedia
+            </p>
+          </footer>
+        </RippleProvider>
       </body>
     </html>
   )

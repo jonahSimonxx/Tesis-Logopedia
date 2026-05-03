@@ -14,8 +14,8 @@ export function obtenerEstadisticas(tesis: Tesis[]): {
 } {
   return {
     total: tesis.length,
-    doctorales: tesis.filter(t => t.tipo === 'doctoral').length,
-    master: tesis.filter(t => t.tipo === 'master').length
+    estatales: tesis.filter(t => t.tipo === 'Examen Estatal').length,
+    TDiploma: tesis.filter(t => t.tipo === 'Trabajo de Diploma').length
   };
 }
 

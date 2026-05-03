@@ -6,5 +6,5 @@ export interface Tesis {
     universidad: string;
     enlace: string;
     descarga: string;
-    tipo: 'doctoral' | 'master';
+    tipo: 'Examen Estatal' | 'Trabajo de Diploma';
 }

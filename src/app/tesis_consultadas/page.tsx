@@ -1,76 +1,51 @@
+// app/tesis_consultadas/page.tsx
 'use client'
 import TesisList from '@/components/TesisList'
 import { cargarTesis, obtenerEstadisticas } from '@/lib/tesis-service'
-import { BookOpen, GraduationCap, FileText } from 'lucide-react'
 
 export default function TesisConsultadasPage() {
   const tesis = cargarTesis()
   const estadisticas = obtenerEstadisticas(tesis)
-  
-  const handleConsultarTesis = (tesis: any) => {
-    window.open(tesis.enlace, '_blank', 'noopener,noreferrer')
-  }
-  
-  const handleDescargarTesis = (tesis: any) => {
-    alert(`Descargando: ${tesis.tema}\n\nRuta: ${tesis.descarga}`)
-  }
-  
+
   return (
-    <div className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
-            📋 Tesis Consultadas
-          </h1>
-          <p className="text-lg text-gray-600">
-            Referencias bibliográficas de la investigación
-          </p>
+    <div className="container page" style={{ paddingTop: '40px' }}>
+      <header className="hero" style={{ minHeight: 'auto', padding: '40px 0' }}>
+        <span className="hero__kicker">Base teórica y referencias</span>
+        <h1 className="hero__title" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)' }}>
+          Bibliografía
+        </h1>
+        <p className="hero__sub">Tesis consultadas durante la investigación doctoral</p>
+      </header>
+
+      <div className="stats" style={{ marginTop: '0', marginBottom: '40px' }}>
+        <div className="glass stats__item">
+          <div className="stats__num">{estadisticas.total}</div>
+          <div className="stats__desc">Total de tesis</div>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                <BookOpen className="w-6 h-6 text-blue-600" />
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-gray-900">{estadisticas.total}</div>
-                <div className="text-gray-600">Total de tesis</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                <GraduationCap className="w-6 h-6 text-green-600" />
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-gray-900">{estadisticas.doctorales}</div>
-                <div className="text-gray-600">Tesis doctorales</div>
-              </div>
-            </div>
-          </div>
-          
-          <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                <FileText className="w-6 h-6 text-purple-600" />
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-gray-900">{estadisticas.master}</div>
-                <div className="text-gray-600">Tesis de máster</div>
-              </div>
-            </div>
-          </div>
+        <div className="glass stats__item">
+          <div className="stats__num">{estadisticas.doctorales}</div>
+          <div className="stats__desc">Doctorales</div>
         </div>
-        
-        <TesisList
-          tesis={tesis}
-          onConsultarTesis={handleConsultarTesis}
-          onDescargarTesis={handleDescargarTesis}
-        />
+        <div className="glass stats__item">
+          <div className="stats__num">{estadisticas.trabajoDiploma}</div>
+          <div className="stats__desc">Trabajos de Diploma</div>
+        </div>
+        <div className="glass stats__item">
+          <div className="stats__num">{estadisticas.examenEstatal}</div>
+          <div className="stats__desc">Exámenes Estatales</div>
+        </div>
       </div>
+
+      <TesisList
+        tesis={tesis}
+        onConsultarTesis={(t) => window.open(t.descarga, '_blank')}
+        onDescargarTesis={(t) => {
+          const link = document.createElement('a')
+          link.href = t.descarga
+          link.download = t.descarga.split('/').pop() || 'tesis.pdf'
+          link.click()
+        }}
+      />
     </div>
   )
 }
