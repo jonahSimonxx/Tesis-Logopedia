@@ -18,7 +18,7 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Apoyo para la tesis',
+  title: 'Memoria Logopédica',
   description: 'Sitio de apoyo para tesis doctoral en Logopedia',
 }
 

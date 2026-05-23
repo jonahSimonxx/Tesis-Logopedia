@@ -1,4 +1,3 @@
-// components/ThemeToggle.tsx
 'use client'
 import { useEffect, useState } from 'react'
 
@@ -22,7 +21,7 @@ export default function ThemeToggle() {
 
   return (
     <button
-      className="glass glass-btn theme-toggle-btn"
+      className="glass glass-btn theme-toggle-btn fixed-theme-btn"
       onClick={toggleTheme}
       aria-label="Toggle colour scheme"
       title="Toggle light / dark mode"

@@ -1,4 +1,3 @@
-// app/page.tsx
 import Link from 'next/link'
 
 export default function Home() {
@@ -7,20 +6,22 @@ export default function Home() {
       <header className="hero">
         <span className="hero__kicker">Tesis Doctoral en Logopedia</span>
         <h1 className="hero__title">
-          [Título de tu
+          Logopedia en perspectiva:
           <br />
-          investigación]
+          una década de estudios
         </h1>
-        <p className="hero__sub">
-          Contexto, metodología, resultados y conclusiones de la investigación doctoral.
-        </p>
+        <div className="hero__sub" style={{ textAlign: 'center', lineHeight: '1.6' }}>
+          Desarrolladores:<br />
+          Melissa Ruenes Bergareche<br />
+          Jonathan A. Simón González
+        </div>
 
         <div className="hero__cta">
-          <Link href="/tesis_consultadas" className="glass glass-btn glass-btn--primary">
-            Ver Bibliografía →
-          </Link>
-          <Link href="/introduccion" className="glass glass-btn glass-btn--ghost">
+          <Link href="/introduccion" className="glass glass-btn glass-btn--primary">
             Introducción
+          </Link>
+          <Link href="/tesis_consultadas" className="glass glass-btn glass-btn--ghost">
+            Ver Bibliografía →
           </Link>
         </div>
 

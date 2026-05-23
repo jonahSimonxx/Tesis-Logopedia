@@ -1,4 +1,3 @@
-// app/tesis_consultadas/page.tsx
 'use client'
 import TesisList from '@/components/TesisList'
 import { cargarTesis, obtenerEstadisticas } from '@/lib/tesis-service'
@@ -21,10 +20,6 @@ export default function TesisConsultadasPage() {
         <div className="glass stats__item">
           <div className="stats__num">{estadisticas.total}</div>
           <div className="stats__desc">Total de tesis</div>
-        </div>
-        <div className="glass stats__item">
-          <div className="stats__num">{estadisticas.doctorales}</div>
-          <div className="stats__desc">Doctorales</div>
         </div>
         <div className="glass stats__item">
           <div className="stats__num">{estadisticas.trabajoDiploma}</div>
