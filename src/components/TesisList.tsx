@@ -102,7 +102,7 @@ export default function TesisList({ tesis, onConsultarTesis, onDescargarTesis }:
       </div>
 
       {/* Lista de tesis */}
-      <div className="card-grid">
+      <div className="card-grid" style={{ marginTop: '32px' }}>
         {tesisFiltradas.map((t) => (
           <TesisCard
             key={t.id}

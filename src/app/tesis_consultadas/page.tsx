@@ -1,10 +1,9 @@
 'use client'
 import TesisList from '@/components/TesisList'
-import { cargarTesis, obtenerEstadisticas } from '@/lib/tesis-service'
+import { cargarTesis } from '@/lib/tesis-service'
 
 export default function TesisConsultadasPage() {
   const tesis = cargarTesis()
-  const estadisticas = obtenerEstadisticas(tesis)
 
   return (
     <div className="container page" style={{ paddingTop: '40px' }}>
@@ -15,21 +14,6 @@ export default function TesisConsultadasPage() {
         </h1>
         <p className="hero__sub">Tesis consultadas durante la investigación doctoral</p>
       </header>
-
-      <div className="stats" style={{ marginTop: '0', marginBottom: '40px' }}>
-        <div className="glass stats__item">
-          <div className="stats__num">{estadisticas.total}</div>
-          <div className="stats__desc">Total de tesis</div>
-        </div>
-        <div className="glass stats__item">
-          <div className="stats__num">{estadisticas.trabajoDiploma}</div>
-          <div className="stats__desc">Trabajos de Diploma</div>
-        </div>
-        <div className="glass stats__item">
-          <div className="stats__num">{estadisticas.examenEstatal}</div>
-          <div className="stats__desc">Exámenes Estatales</div>
-        </div>
-      </div>
 
       <TesisList
         tesis={tesis}
