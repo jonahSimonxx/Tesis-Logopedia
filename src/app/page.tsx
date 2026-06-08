@@ -6,7 +6,7 @@ export default function Home() {
       <header className="hero">
         <span className="hero__kicker">Tesis Doctoral en Logopedia</span>
         <h1 className="hero__title">
-          Logopedia en perspectiva:
+          Trastornos de la comunicación oral en perspectiva:
           <br />
           una década de estudios
         </h1>
@@ -23,21 +23,6 @@ export default function Home() {
           <Link href="/tesis_consultadas" className="glass glass-btn glass-btn--ghost">
             Ver Bibliografía →
           </Link>
-        </div>
-
-        <div className="container stats">
-          <div className="glass stats__item">
-            <div className="stats__num">6</div>
-            <div className="stats__desc">Capítulos</div>
-          </div>
-          <div className="glass stats__item">
-            <div className="stats__num">67+</div>
-            <div className="stats__desc">Referencias</div>
-          </div>
-          <div className="glass stats__item">
-            <div className="stats__num">2025</div>
-            <div className="stats__desc">Año</div>
-          </div>
         </div>
       </header>
 
@@ -62,7 +47,7 @@ export default function Home() {
 
             <Link href="/metodologia" className="glass glass-card">
               <div className="glass-card__label">Capítulo 2</div>
-              <h3 className="glass-card__title">Metodología</h3>
+              <h3 className="glass-card__title">Proceder Metodológico</h3>
               <p className="glass-card__body">
                 Diseño de investigación, participantes e instrumentos.
               </p>

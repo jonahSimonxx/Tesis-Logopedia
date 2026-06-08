@@ -9,7 +9,7 @@ const MenuBar = () => {
   const links = [
     { path: '/', label: 'Inicio' },
     { path: '/introduccion', label: 'Introducción' },
-    { path: '/metodologia', label: 'Metodología' },
+    { path: '/metodologia', label: 'Proceder Metodológico' },
     { path: '/resultados', label: 'Resultados' },
     { path: '/tesis_consultadas', label: 'Bibliografía' },
     { path: '/conclusiones', label: 'Conclusiones' },
