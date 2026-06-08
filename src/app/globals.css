@@ -970,6 +970,7 @@ a:focus-visible {
 .glass-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4px;
   padding: var(--space-xs);
   border-radius: var(--radius-full);
