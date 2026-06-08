@@ -16,7 +16,7 @@ const MenuBar = () => {
   ]
 
   return (
-    <nav className="glass-nav" aria-label="Main navigation">
+    <nav className="glass glass-nav" aria-label="Main navigation">
       {links.map(({ path, label }) => (
         <Link
           key={path}
