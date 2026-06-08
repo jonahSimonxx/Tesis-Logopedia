@@ -45,7 +45,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link href="/metodologia" className="glass glass-card">
+            <Link href="/procederMetodologico" className="glass glass-card">
               <div className="glass-card__label">Capítulo 2</div>
               <h3 className="glass-card__title">Proceder Metodológico</h3>
               <p className="glass-card__body">

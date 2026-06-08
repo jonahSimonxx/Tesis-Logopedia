@@ -971,6 +971,7 @@ a:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 4px;
   padding: var(--space-xs);
   border-radius: var(--radius-full);
@@ -3193,12 +3194,10 @@ label {
        30. THEME TOGGLE
        -------------------------------------------------------------------------- */
 .theme-toggle-btn {
-  position: fixed;
-  top: var(--space-md);
-  right: var(--space-md);
-  z-index: var(--z-toast);
-  width: 48px;
-  height: 48px;
+  position: static;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
@@ -3691,19 +3690,6 @@ label {
 [data-theme="light"] .glass-accordion-content {
   color: rgba(15, 23, 42, 0.72);
   opacity: 1;
-}
-.fixed-theme-btn {
-  position: fixed !important;
-  top: 84px !important;
-  right: var(--space-md) !important;
-  bottom: auto !important;
-  left: auto !important;
-  transform: none !important;
-}
-@media (max-width: 640px) {
-  .fixed-theme-btn {
-    top: 132px !important;
-  }
 }
 
 /* Animación para acordeones */

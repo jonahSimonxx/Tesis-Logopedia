@@ -2,6 +2,7 @@
 'use client'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import ThemeToggle from './ThemeToggle'
 
 const MenuBar = () => {
   const pathname = usePathname()
@@ -10,6 +11,7 @@ const MenuBar = () => {
     { path: '/', label: 'Inicio' },
     { path: '/introduccion', label: 'Introducción' },
     { path: '/procederMetodologico', label: 'Proceder Metodológico' },
+    { path: '/trastornosComOral', label: 'Trastornos de la comunicación oral' },
     { path: '/resultados', label: 'Resultados' },
     { path: '/tesis_consultadas', label: 'Bibliografía' },
     { path: '/conclusiones', label: 'Conclusiones' },
@@ -26,6 +28,7 @@ const MenuBar = () => {
           {label}
         </Link>
       ))}
+      <ThemeToggle />
     </nav>
   )
 }
