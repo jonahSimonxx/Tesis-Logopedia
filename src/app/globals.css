@@ -3692,17 +3692,10 @@ label {
   opacity: 1;
 }
 .fixed-theme-btn {
-  position: fixed !important;
-  top: 84px !important;
-  right: var(--space-md) !important;
-  bottom: auto !important;
-  left: auto !important;
+  position: static !important;
+  display: block;
+  margin: var(--space-md) var(--space-md) 0 auto;
   transform: none !important;
-}
-@media (max-width: 640px) {
-  .fixed-theme-btn {
-    top: 132px !important;
-  }
 }
 
 /* Animación para acordeones */
