@@ -10,8 +10,8 @@ const MenuBar = () => {
   const links = [
     { path: '/', label: 'Inicio' },
     { path: '/introduccion', label: 'Introducción' },
-    { path: '/procederMetodologico', label: 'Proceder Metodológico' },
     { path: '/trastornosComOral', label: 'Trastornos de la comunicación oral' },
+    { path: '/procederMetodologico', label: 'Proceder Metodológico' },
     { path: '/resultados', label: 'Resultados' },
     { path: '/tesis_consultadas', label: 'Bibliografía' },
     { path: '/conclusiones', label: 'Conclusiones' },

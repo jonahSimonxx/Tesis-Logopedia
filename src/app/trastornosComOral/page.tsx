@@ -389,8 +389,280 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
     ),
   },
   {
-    id: 'comparativo',
-    titulo: 'Cuadro comparativo',
+    id: 'retraso',
+    titulo: 'Retraso del lenguaje',
+    contenido: (
+      <>
+        <p>
+          Se considera que un educando está retrasado en el lenguaje cuando,
+          desde el punto de vista cuantitativo (cantidad de vocabulario) o
+          cualitativo (diferentes áreas del lenguaje), está por debajo de la edad
+          cronológica.
+        </p>
+        <p>
+          El retraso del lenguaje se considera un <strong>trastorno primario</strong>{' '}
+          cuando se caracteriza principalmente por un retardo en la adquisición
+          de las habilidades lingüísticas de acuerdo a la edad cronológica, sin
+          asociación a causas orgánicas. En cambio, es un{' '}
+          <strong>trastorno secundario</strong> cuando el desarrollo enlentecido
+          se relaciona con un déficit sensorial (sordera o hipoacusia,
+          sordoceguera), motor, cognitivo (retraso mental), con el autismo o con
+          disfunciones cerebrales evidentes (disfasia).
+        </p>
+        <p>
+          <strong>Causas endógenas (orgánicas):</strong> discapacidad
+          intelectual, hipoacusias, parálisis cerebral, lesión focal o inmadurez
+          neurológica, trastornos de lateralidad.
+        </p>
+        <p>
+          <strong>Causas exógenas (funcionales):</strong> pobre estimulación
+          lingüística (jerga familiar, uso indiscriminado de diminutivos),
+          problemas afectivo-relacionales (sobreprotección, privación,
+          sobrecorrección lingüística), negativismo, institucionalismo u
+          hospitalización prolongada, bilingüismo mal establecido.
+        </p>
+        <p>Se puede clasificar en:</p>
+        <ul>
+          <li>
+            <strong>Retraso específico severo del lenguaje:</strong> la
+            manifestación más grave. Reducción considerable de los patrones
+            fonológicos (en "estado embrionario"), afectación de casi todos los
+            sonidos del idioma y vocabulario reducido a un pequeño grupo de
+            palabras mal estructuradas, en ocasiones inentendibles fuera de
+            contexto. Hay ausencia total o casi total de comunicación con
+            lenguaje articulado, sustituido por mímica, jerga y sonidos
+            onomatopéyicos.
+          </li>
+          <li>
+            <strong>Retraso simple del lenguaje:</strong> la forma más leve. Los
+            componentes fonológico, morfosintáctico, semántico y pragmático
+            reflejan un desbalance cualitativo y cuantitativo respecto a otros
+            niños del mismo período evolutivo.
+          </li>
+        </ul>
+        <p>
+          <strong>Características de la expresión (retraso simple):</strong>
+        </p>
+        <ul>
+          <li>
+            <strong>Nivel fonológico:</strong> patrones desviados, habla
+            infantilizada, omisión de consonantes y sílabas iniciales; el grupo
+            más afectado es el fricativo.
+          </li>
+          <li>
+            <strong>Nivel semántico:</strong> vocabulario reducido a objetos del
+            entorno y problemas con conceptos abstractos (colores, forma,
+            espacio, tiempo).
+          </li>
+          <li>
+            <strong>Nivel morfosintáctico:</strong> lenguaje telegráfico, frases
+            cortas, dificultades con artículos, pronombres, plurales y tiempos
+            verbales; predominio de coordinación con "y".
+          </li>
+          <li>
+            <strong>Nivel pragmático:</strong> alteración de la intencionalidad
+            comunicativa, dificultad para adaptarse al interlocutor y escaso uso
+            del lenguaje en su función lúdica o narrativa.
+          </li>
+        </ul>
+        <p>
+          <strong>Comprensión:</strong> dificultades con órdenes sencillas o
+          complejas, insuficiente discriminación de fonemas cercanos y una
+          comprensión aproximativa y contextual.
+        </p>
+        <p>
+          Suele asociarse a una inmadurez generalizada: ligero retraso motor y
+          de la expresión gráfica, retraso en la dominancia lateral, dificultades
+          cognitivas (pensamiento-lenguaje, memoria-atención), problemas
+          psicoafectivos (baja autoestima, timidez, introversión, hiperactividad)
+          y dificultades en el aprendizaje de la lectoescritura.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: 'tartamudez',
+    titulo: 'Tartamudez',
+    contenido: (
+      <>
+        <p>
+          La tartamudez es un trastorno complejo del habla que se caracteriza
+          fundamentalmente por la interrupción de la fluidez verbal, manifestada
+          a través de repeticiones, prolongaciones y bloqueos involuntarios de
+          sonidos, sílabas o palabras. Estas interrupciones se producen como
+          resultado de contracciones espasmódicas de la musculatura implicada en
+          la articulación, que pueden ser <strong>tónicas</strong> (tensiones
+          sostenidas que impiden la emisión del sonido) o{' '}
+          <strong>clónicas</strong> (movimientos rápidos y repetitivos). Suelen
+          ir acompañadas de movimientos accesorios o concomitantes en mandíbula,
+          labios o cuello.
+        </p>
+        <p>
+          Desde una perspectiva funcional y clínica, no solo afecta la producción
+          del habla, sino que tiene un impacto significativo en la comunicación
+          interpersonal, la autoestima y la calidad de vida. Las personas que
+          tartamudean experimentan con frecuencia frustración, ansiedad y
+          preocupación, lo que puede derivar en evitación de situaciones
+          comunicativas y deterioro de sus relaciones sociales, académicas o
+          laborales.
+        </p>
+        <p>
+          Según sus manifestaciones clínicas, la <strong>tartamudez clónica</strong>{' '}
+          se caracteriza por repeticiones rápidas y reiteradas de sonidos o
+          sílabas, mientras que la <strong>tartamudez tónica</strong> se
+          manifiesta por bloqueos o pausas prolongadas en la emisión del habla.
+        </p>
+        <p>
+          Es un trastorno multifactorial en el que confluyen aspectos
+          neurobiológicos (control motor del habla), factores genéticos, variables
+          emocionales (estrés y ansiedad) y el contexto social y comunicativo.
+          Requiere un abordaje interdisciplinario que integre la intervención
+          logopédica con el apoyo psicológico y, en ocasiones, médico.
+        </p>
+      </>
+    ),
+  },
+  {
+    id: 'tartaleo',
+    titulo: 'Tartaleo',
+    contenido: (
+      <>
+        <p>
+          El tartaleo es un trastorno de la comunicación oral y escrita de
+          carácter heredoconstitucional y central, que se manifiesta generalmente
+          en la emisión rápida y atropellada del lenguaje (taquifrasia o
+          taquilalia). Se caracteriza por repeticiones, titubeos, vacilaciones y
+          prolongaciones de sonidos o sílabas. Aparece comúnmente en la infancia,
+          entre los 3 y 6 años, cuando el educando está madurando las estructuras
+          corticales y periféricas implicadas en el lenguaje.
+        </p>
+        <p>
+          Refleja un desequilibrio temporal en el lenguaje central. A diferencia
+          de la tartamudez, suele ser transitorio y no está asociado a una
+          afectación psicopatológica o neurológica.
+        </p>
+        <p>
+          <strong>Síntomas obligatorios:</strong> repeticiones de sílabas o
+          palabras, ausencia de conciencia sobre la forma de hablar, dificultades
+          de concentración, limitación del campo de atención, debilidad
+          perceptiva y pensamiento desorganizado.
+        </p>
+        <p>
+          <strong>Síntomas facultativos:</strong> interjecciones, detenciones
+          antes de vocales sin contracción muscular, incapacidad articulatoria
+          motriz, dificultades gramaticales, monotonía, trastornos respiratorios
+          durante el habla y, en algunos casos, desarrollo tardío del lenguaje.
+          Puede asociarse a problemas de lectoescritura, hiperactividad e
+          incapacidad rítmico-musical.
+        </p>
+        <p>
+          El tartaleo fisiológico es un proceso evolutivo que suele resolverse
+          espontáneamente con la maduración del sistema nervioso. Sin embargo, si
+          persiste o se agrava, puede evolucionar hacia una tartamudez más
+          definida, por lo que la observación, el seguimiento y la intervención
+          temprana (orientación a la familia y estimulación del lenguaje) son
+          clave.
+        </p>
+        <p>
+          Desde el punto de vista psicológico y pedagógico, el educando con
+          tartaleo suele mostrar intranquilidad, descuido en las tareas
+          escolares, impuntualidad y cambios frecuentes de actividad. A nivel
+          social es activo y sociable, aunque carece de talento narrativo; los
+          fracasos escolares y sociales no suelen afectar su ánimo, a diferencia
+          de los niños con tartamudez.
+        </p>
+
+        <p>
+          <strong>Tartamudez frente a tartaleo:</strong>
+        </p>
+        <div className="compare-table-wrap">
+          <table className="compare-table">
+            <thead>
+              <tr>
+                <th scope="col">Aspecto</th>
+                <th scope="col" className="is-period-a">
+                  Tartamudez
+                </th>
+                <th scope="col" className="is-period-b">
+                  Tartaleo
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Conciencia del trastorno</th>
+                <td>Alta, con estrategias encubridoras</td>
+                <td>Generalmente ausente</td>
+              </tr>
+              <tr>
+                <th scope="row">Ritmo del lenguaje</th>
+                <td>Interrumpido</td>
+                <td>Acelerado, rápido (taquilalia)</td>
+              </tr>
+              <tr>
+                <th scope="row">Movimientos concomitantes</th>
+                <td>Ausentes</td>
+                <td>Presentes (ojos, labios, mejillas, extremidades)</td>
+              </tr>
+              <tr>
+                <th scope="row">Fonemas fóbicos</th>
+                <td>Frecuentes (/p/, /t/, /k/)</td>
+                <td>Ausentes</td>
+              </tr>
+              <tr>
+                <th scope="row">Concentración en el habla</th>
+                <td>Mal</td>
+                <td>Bien</td>
+              </tr>
+              <tr>
+                <th scope="row">Lectura de texto conocido</th>
+                <td>Bien</td>
+                <td>Mal</td>
+              </tr>
+              <tr>
+                <th scope="row">Lectura de texto desconocido</th>
+                <td>Mal</td>
+                <td>Bien</td>
+              </tr>
+              <tr>
+                <th scope="row">Ortografía y escritura</th>
+                <td>Generalmente buena</td>
+                <td>Deficiente, irregular, con errores frecuentes</td>
+              </tr>
+              <tr>
+                <th scope="row">Capacidad narrativa</th>
+                <td>Buena</td>
+                <td>Dificultad para estructurar narraciones</td>
+              </tr>
+              <tr>
+                <th scope="row">Atención y concentración</th>
+                <td>Normal</td>
+                <td>Deficiente</td>
+              </tr>
+              <tr>
+                <th scope="row">Actividad motora</th>
+                <td>Normal</td>
+                <td>Intranquilidad, hiperactividad</td>
+              </tr>
+              <tr>
+                <th scope="row">Aprendizaje escolar</th>
+                <td>Generalmente buen estudiante</td>
+                <td>Tendencia a bajo rendimiento</td>
+              </tr>
+              <tr>
+                <th scope="row">Vivencias psicológicas</th>
+                <td>Infelicidad, hipersensibilidad</td>
+                <td>Indiferencia</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </>
+    ),
+  },
+  {
+    id: 'resumen',
+    titulo: 'Cuadro resumen',
     contenido: (
       <div className="compare-table-wrap">
         <table className="compare-table">
@@ -406,41 +678,75 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
               <th scope="row">Dislalia</th>
               <td>
                 Alteración funcional de los órganos articulatorios sin daño
-                neurológico ni malformaciones graves. Puede deberse a malos
-                hábitos, imitación, déficit auditivo leve o inmadurez.
+                neurológico ni malformaciones graves. Malos hábitos, imitación,
+                déficit auditivo leve o inmadurez.
               </td>
               <td>
-                Evolutiva (propia de ciertas etapas del desarrollo infantil),
-                funcional (por mal uso de los órganos articulatorios), audiógena
-                (por problemas auditivos leves) y orgánica (alteraciones físicas
-                menores).
+                Evolutiva, funcional, audiógena y orgánica (además,
+                simples/monomorfas o complejas/polimorfas).
               </td>
             </tr>
             <tr>
               <th scope="row">Rinolalia</th>
               <td>
-                Alteración en la resonancia de la voz por problemas en la
-                comunicación entre la cavidad oral y nasal. Puede ser causada por
+                Alteración en la resonancia de la voz por el desequilibrio en el
+                paso del aire entre la cavidad oral y la nasal; puede deberse a
                 malformaciones anatómicas.
               </td>
               <td>
-                Abierta (exceso de salida de aire por la nariz), cerrada
-                (obstrucción nasal) y mixta (combinación de ambas).
+                Abierta (hiperrinolalia), cerrada (hiporrinolalia), espástica y
+                mixta (orgánica o funcional; congénita o adquirida).
               </td>
             </tr>
             <tr>
               <th scope="row">Disartria</th>
               <td>
-                Trastorno neuromotor del habla causado por lesiones en el sistema
-                nervioso central o periférico. Puede deberse a parálisis
-                cerebral, accidentes cerebrovasculares, traumatismos
-                craneoencefálicos o enfermedades neurodegenerativas.
+                Trastorno neuromotor del habla por lesiones en el sistema
+                nervioso central o periférico (parálisis cerebral, accidentes
+                cerebrovasculares, traumatismos craneoencefálicos, enfermedades
+                neurodegenerativas).
               </td>
               <td>
-                Espástica (lesiones en vías piramidales), flácida (lesión en
-                nervios periféricos), atáxica (daño cerebeloso), hipocinética
-                (asociada a Parkinson), hipercinética (movimientos
-                involuntarios) y mixta (combinación de varios tipos).
+                Espástica, flácida, atáxica, hipocinética, hipercinética y mixta
+                (según la localización: bulbar, pseudobulbar, cerebelosa,
+                subcortical, cortical).
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Retraso del lenguaje</th>
+              <td>
+                Endógenas (discapacidad intelectual, hipoacusias, parálisis
+                cerebral, lesión focal o inmadurez neurológica, trastornos de
+                lateralidad) y exógenas/funcionales (pobre estimulación,
+                problemas afectivo-relacionales, negativismo, institucionalismo,
+                bilingüismo mal establecido).
+              </td>
+              <td>
+                Retraso específico severo del lenguaje y retraso simple del
+                lenguaje.
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Tartamudez</th>
+              <td>
+                Multifactorial: factores neurobiológicos (control motor del
+                habla), genéticos, emocionales (estrés y ansiedad) y sociales.
+              </td>
+              <td>
+                Clónica (repeticiones rápidas de sonidos o sílabas) y tónica
+                (bloqueos o pausas prolongadas).
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">Tartaleo</th>
+              <td>
+                Heredoconstitucional y central; desequilibrio temporal del
+                lenguaje central por inmadurez de las estructuras corticales y
+                periféricas (3 a 6 años).
+              </td>
+              <td>
+                Fisiológico o evolutivo (transitorio); puede evolucionar hacia
+                una tartamudez definida si persiste.
               </td>
             </tr>
           </tbody>
