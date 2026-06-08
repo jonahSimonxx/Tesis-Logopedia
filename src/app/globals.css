@@ -3693,11 +3693,16 @@ label {
 }
 .fixed-theme-btn {
   position: fixed !important;
-  top: var(--space-md) !important;
+  top: 84px !important;
   right: var(--space-md) !important;
   bottom: auto !important;
   left: auto !important;
   transform: none !important;
+}
+@media (max-width: 640px) {
+  .fixed-theme-btn {
+    top: 132px !important;
+  }
 }
 
 /* Animación para acordeones */
@@ -3981,4 +3986,178 @@ label {
   .accordion__content {
     padding: var(--space-md);
   }
+}
+
+/* --------------------------------------------------------------------------
+       33. PAGE: INTRODUCCIÓN
+       -------------------------------------------------------------------------- */
+.intro-hero {
+  min-height: auto;
+  padding: var(--space-3xl) var(--space-md) var(--space-xl);
+  gap: var(--space-md);
+}
+.intro-hero .hero__title {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+.intro-hero .hero__sub {
+  max-width: 760px;
+  font-size: var(--text-lg);
+  opacity: 0.82;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.intro-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+.intro-card--wide {
+  grid-column: 1 / -1;
+}
+
+.intro-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.intro-card__icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  font-size: 1.35rem;
+  line-height: 1;
+  background: rgba(94, 231, 223, 0.14);
+  border: 1px solid rgba(94, 231, 223, 0.32);
+}
+.intro-card--violet .intro-card__icon {
+  background: rgba(180, 144, 245, 0.14);
+  border-color: rgba(180, 144, 245, 0.32);
+}
+.intro-card--rose .intro-card__icon {
+  background: rgba(247, 168, 196, 0.14);
+  border-color: rgba(247, 168, 196, 0.32);
+}
+.intro-card--amber .intro-card__icon {
+  background: rgba(255, 210, 127, 0.16);
+  border-color: rgba(255, 210, 127, 0.34);
+}
+.intro-card--lime .intro-card__icon {
+  background: rgba(168, 240, 138, 0.16);
+  border-color: rgba(168, 240, 138, 0.34);
+}
+.intro-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  line-height: 1.2;
+}
+
+/* Highlighted stat (80 tesis) */
+.intro-stat {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--glass-white);
+  border: 1px solid var(--glass-border-subtle);
+  margin-bottom: var(--space-sm);
+}
+.intro-stat__num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--accent-aqua), var(--accent-violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.intro-stat__label {
+  font-size: var(--text-sm);
+  opacity: 0.7;
+}
+
+.intro-meta {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  opacity: 0.8;
+  border-left: 2px solid rgba(94, 231, 223, 0.4);
+  padding-left: var(--space-md);
+}
+.intro-meta strong {
+  opacity: 1;
+}
+
+/* Legal reference list (with years) */
+.intro-legal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+}
+.intro-legal li {
+  display: flex;
+  gap: var(--space-sm);
+  align-items: flex-start;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  background: var(--glass-white);
+  border: 1px solid var(--glass-border-subtle);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+.intro-legal li::before {
+  content: "§";
+  color: var(--accent-aqua);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Closing tagline banner */
+.intro-tagline {
+  text-align: center;
+  padding: var(--space-2xl) var(--space-lg);
+  border-radius: var(--radius-xl);
+  margin-top: var(--space-xl);
+}
+.intro-tagline__cta {
+  font-size: var(--text-sm);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: var(--space-md);
+}
+.intro-tagline__quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+  line-height: 1.3;
+  background: linear-gradient(
+    135deg,
+    #fff 25%,
+    var(--accent-aqua) 70%,
+    var(--accent-violet) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="light"] .intro-tagline__quote {
+  background: linear-gradient(
+    135deg,
+    #0f172a 25%,
+    var(--accent-aqua) 75%,
+    var(--accent-violet) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
