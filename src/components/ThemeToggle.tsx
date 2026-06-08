@@ -21,7 +21,7 @@ export default function ThemeToggle() {
 
   return (
     <button
-      className="glass glass-btn theme-toggle-btn fixed-theme-btn"
+      className="glass glass-btn theme-toggle-btn"
       onClick={toggleTheme}
       aria-label="Toggle colour scheme"
       title="Toggle light / dark mode"
