@@ -3192,10 +3192,8 @@ label {
        30. THEME TOGGLE
        -------------------------------------------------------------------------- */
 .theme-toggle-btn {
-  position: fixed;
-  top: var(--space-md);
-  right: var(--space-md);
-  z-index: var(--z-toast);
+  position: static;
+  flex-shrink: 0;
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -3691,11 +3689,15 @@ label {
   color: rgba(15, 23, 42, 0.72);
   opacity: 1;
 }
-.fixed-theme-btn {
-  position: static !important;
-  display: block;
-  margin: var(--space-md) var(--space-md) 0 auto;
-  transform: none !important;
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-md) 0;
+}
+.topbar .glass-nav {
+  width: fit-content;
 }
 
 /* Animación para acordeones */

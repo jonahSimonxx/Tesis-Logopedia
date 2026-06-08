@@ -37,9 +37,11 @@ export default function RootLayout({
           <div className="scene__blob scene__blob--3"></div>
         </div>
 
-        <ThemeToggle />
         <RippleProvider>
-          <MenuBar />
+          <header className="topbar">
+            <MenuBar />
+            <ThemeToggle />
+          </header>
           <main>{children}</main>
           <footer className="footer">
             <p className="footer__text">
