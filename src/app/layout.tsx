@@ -3,7 +3,6 @@ import type { Metadata } from 'next'
 import { Italiana, DM_Sans } from 'next/font/google'
 import './globals.css'
 import MenuBar from '@/components/MenuBar'
-import ThemeToggle from '@/components/ThemeToggle'
 import RippleProvider from '@/components/RippleProvider'
 
 const italiana = Italiana({
@@ -37,7 +36,6 @@ export default function RootLayout({
           <div className="scene__blob scene__blob--3"></div>
         </div>
 
-        <ThemeToggle />
         <RippleProvider>
           <MenuBar />
           <main>{children}</main>
