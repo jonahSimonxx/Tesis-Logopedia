@@ -149,31 +149,6 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
     ),
   },
   {
-    id: 'respaldo',
-    titulo: 'Respaldo institucional y legal',
-    contenido: (
-      <>
-        <p>
-          Este sitio se sustenta en los marcos legales nacionales e
-          internacionales que promueven la inclusión, la equidad y el derecho a
-          la educación y la salud:
-        </p>
-        <ul>
-          <li>Agenda 2030.</li>
-          <li>Constitución de la República de Cuba (2019).</li>
-          <li>Código de las Familias (2022).</li>
-          <li>
-            Anteproyecto del Código de la Niñez, Adolescencias y Juventudes
-            (2024).
-          </li>
-          <li>
-            Tercer Perfeccionamiento del Sistema Nacional de Educación (2016).
-          </li>
-        </ul>
-      </>
-    ),
-  },
-  {
     id: 'compromiso',
     titulo: 'Nuestro compromiso',
     contenido: (
