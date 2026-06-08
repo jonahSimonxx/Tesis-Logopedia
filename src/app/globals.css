@@ -3715,3 +3715,270 @@ label {
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out forwards;
 }
+
+/* --------------------------------------------------------------------------
+       32. PAGE: RESULTADOS / ANÁLISIS
+       -------------------------------------------------------------------------- */
+.results {
+  position: relative;
+  z-index: 10;
+  width: min(960px, 92vw);
+  margin-inline: auto;
+  padding: var(--space-3xl) 0 var(--space-4xl);
+}
+
+.results__header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.results__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 4vw, 2.8rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-lg);
+  background: linear-gradient(
+    135deg,
+    #fff 25%,
+    var(--accent-aqua) 70%,
+    var(--accent-violet) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-theme="light"] .results__title {
+  background: linear-gradient(
+    135deg,
+    #0f172a 25%,
+    var(--accent-aqua) 75%,
+    var(--accent-violet) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.results__rule {
+  width: 96px;
+  height: 3px;
+  margin: 0 auto;
+  border-radius: var(--radius-full);
+  background: linear-gradient(90deg, var(--accent-aqua), var(--accent-violet));
+}
+
+.results__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+/* ── Accordion ── */
+.accordion {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border-color var(--dur-fast), box-shadow var(--dur-mid);
+}
+.accordion.is-open {
+  border-color: rgba(94, 231, 223, 0.35);
+  box-shadow: var(--shadow-glow);
+}
+
+/* Transparent header that highlights on hover / when open */
+.accordion__trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--color-text);
+  transition: background var(--dur-fast), color var(--dur-fast);
+}
+.accordion__trigger:hover {
+  background: var(--glass-white-md);
+}
+.accordion.is-open .accordion__trigger {
+  background: var(--glass-white);
+}
+.accordion__trigger:focus-visible {
+  outline: 2px solid var(--accent-aqua);
+  outline-offset: -2px;
+}
+
+.accordion__icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-white);
+  color: var(--color-text-muted);
+  transition: transform var(--dur-mid) var(--ease-liquid),
+    background var(--dur-fast), border-color var(--dur-fast),
+    color var(--dur-fast);
+}
+.accordion__trigger:hover .accordion__icon {
+  color: var(--color-text);
+}
+.accordion.is-open .accordion__icon {
+  transform: rotate(180deg);
+  background: rgba(94, 231, 223, 0.18);
+  border-color: rgba(94, 231, 223, 0.5);
+  color: var(--accent-aqua);
+}
+
+/* Smooth open/close that works for any content height (grid 0fr → 1fr) */
+.accordion__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows var(--dur-mid) var(--ease-smooth);
+}
+.accordion.is-open .accordion__body {
+  grid-template-rows: 1fr;
+}
+.accordion__body-inner {
+  overflow: hidden;
+}
+.accordion__content {
+  padding: var(--space-lg);
+  border-top: 1px solid var(--glass-border-subtle);
+}
+
+/* ── Prose (readable body text) ── */
+.prose {
+  color: var(--color-text);
+}
+.prose p {
+  font-size: var(--text-base);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+  opacity: 0.86;
+}
+.prose > p:last-child,
+.prose > ul:last-child {
+  margin-bottom: 0;
+}
+.prose strong {
+  font-weight: 600;
+  opacity: 1;
+  color: var(--color-text);
+}
+.prose ul {
+  list-style: disc;
+  padding-left: var(--space-xl);
+  margin-bottom: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+.prose li {
+  line-height: 1.7;
+  opacity: 0.86;
+}
+.prose li::marker {
+  color: var(--accent-aqua);
+}
+.prose .prose__danger {
+  color: #f87171;
+}
+[data-theme="light"] .prose .prose__danger {
+  color: #dc2626;
+}
+
+/* Inner highlighted card inside an accordion */
+.results-card {
+  background: var(--glass-white);
+  border: 1px solid var(--glass-border-subtle);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+.results-card__title {
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
+}
+
+/* ── Comparison table ── */
+.compare-table-wrap {
+  margin: var(--space-lg) 0;
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.compare-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+.compare-table th,
+.compare-table td {
+  padding: var(--space-md);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.55;
+  border-bottom: 1px solid var(--glass-border-subtle);
+  border-right: 1px solid var(--glass-border-subtle);
+}
+.compare-table th:last-child,
+.compare-table td:last-child {
+  border-right: none;
+}
+.compare-table tbody tr:last-child td,
+.compare-table tbody tr:last-child th {
+  border-bottom: none;
+}
+.compare-table thead th {
+  font-weight: 600;
+  white-space: nowrap;
+  background: rgba(94, 231, 223, 0.1);
+  color: var(--color-text);
+}
+.compare-table thead th.is-period-a {
+  color: var(--accent-aqua);
+}
+.compare-table thead th.is-period-b {
+  color: var(--accent-violet);
+}
+.compare-table tbody th[scope="row"] {
+  font-weight: 600;
+  white-space: nowrap;
+  background: var(--glass-white);
+  color: var(--color-text);
+}
+.compare-table tbody tr {
+  transition: background var(--dur-fast);
+}
+.compare-table tbody tr:hover {
+  background: var(--glass-white);
+}
+
+@media (max-width: 640px) {
+  .results {
+    padding: var(--space-2xl) 0 var(--space-3xl);
+  }
+  .accordion__trigger {
+    padding: var(--space-md);
+    font-size: var(--text-base);
+  }
+  .accordion__content {
+    padding: var(--space-md);
+  }
+}
