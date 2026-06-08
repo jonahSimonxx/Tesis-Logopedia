@@ -36,7 +36,7 @@ export default function AnalisisResultados() {
         {SECCIONES.map(({ id, titulo, contenido }) => {
           const open = isOpen(id);
           return (
-            <div key={id} className={`glass accordion${open ? ' is-open' : ''}`}>
+            <div key={id} className={`accordion${open ? ' is-open' : ''}`}>
               <h2>
                 <button
                   type="button"
@@ -93,11 +93,14 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
           <strong>biopsicosocial</strong>, donde convergen dimensiones{' '}
           <strong>cognitivas</strong>, <strong>afectivas</strong> y{' '}
           <strong>contextuales</strong>, como el entorno familiar, escolar y
-          comunitario. Dicho enfoque subraya la importancia de la mediación
-          social en el desarrollo lingüístico, entendiendo que el lenguaje no
-          solo es una herramienta de comunicación, sino también un medio para la
-          formación de conceptos, la organización del pensamiento y la
-          internalización de habilidades sociales.
+          comunitario.
+        </p>
+        <p>
+          Dicho enfoque subraya la importancia de la mediación social en el
+          desarrollo lingüístico, entendiendo que el lenguaje no solo es una
+          herramienta de comunicación, sino también un medio para la formación
+          de conceptos, la organización del pensamiento y la internalización de
+          habilidades sociales.
         </p>
       </>
     ),
@@ -116,8 +119,11 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
           Vygotsky. Este marco concebía el lenguaje como un proceso{' '}
           <strong>biopsicosocial</strong> en el que convergían dimensiones
           cognitivas, afectivas y contextuales (entorno familiar, escolar y
-          comunitario). La mediación social se identificó como un elemento clave
-          en el desarrollo lingüístico, entendiendo el lenguaje no solo como una
+          comunitario).
+        </p>
+        <p>
+          La mediación social se identificó como un elemento clave en el
+          desarrollo lingüístico, entendiendo el lenguaje no solo como una
           herramienta de comunicación, sino también como un medio para la
           formación de conceptos y la organización del pensamiento.
         </p>
@@ -330,13 +336,16 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
           niños sordos. Las metodologías de investigación se enriquecieron con el
           uso de tecnologías, y las estrategias de intervención se volvieron más
           sofisticadas, adoptando enfoques multisensoriales y secuencias
-          progresivas. Además, la participación familiar adquirió mayor
-          relevancia, y las intervenciones se extendieron a grupos más diversos,
-          como adolescentes, niños con implantes cocleares, TEA y síndrome de
-          Down.
+          progresivas.
+        </p>
+        <p>
+          Además, la participación familiar adquirió mayor relevancia, y las
+          intervenciones se extendieron a grupos más diversos, como adolescentes,
+          niños con implantes cocleares, TEA y síndrome de Down.
         </p>
 
         <div className="compare-table-wrap">
+          <div className="compare-table-scroll">
           <table className="compare-table">
             <thead>
               <tr>
@@ -397,6 +406,7 @@ const SECCIONES: { id: string; titulo: string; contenido: React.ReactNode }[] = 
               </tr>
             </tbody>
           </table>
+          </div>
         </div>
 
         <div className="results-card">
