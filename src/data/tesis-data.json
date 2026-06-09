@@ -54,15 +54,6 @@
     "tipo": "Trabajo de Diploma"
   },
   {
-    "id": 7,
-    "tema": "Manual de orientación familiar para la prevención de trastornos del lenguaje en la infancia preescolar",
-    "autor": "Escalona Hernández, Daniela",
-    "año": 2020,
-    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
-    "descarga": "/tesis/Daniela Esc, 4to año/Tesis oficial Daniela 30-mayo.pdf",
-    "tipo": "Trabajo de Diploma"
-  },
-  {
     "id": 8,
     "tema": "La orientación familiar en la corrección de la dislalia mediante la tarea para la casa",
     "autor": "Hernández Arrondo, Delisel",
@@ -333,15 +324,6 @@
     "tipo": "Trabajo de Diploma"
   },
   {
-    "id": 38,
-    "tema": "Estudio de caso, escolar con retraso del lenguaje asociado a un retardo en el desarrollo psíquico",
-    "autor": "Pérez Hidalgo, Luis Miguel",
-    "año": 2020,
-    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
-    "descarga": "/tesis/Luis M Pérez, 4to año/Rev profe Deysi, última 26 ag.pdf",
-    "tipo": "Trabajo de Diploma"
-  },
-  {
     "id": 39,
     "tema": "El desarrollo del lenguaje en niños de la infancia preescolar con indicadores de posible discapacidad intelectual",
     "autor": "Rico Ruenes, Maria Carla",
@@ -431,25 +413,6 @@
     "descarga": "/tesis/TESIS INDIRA/9 e3 junio INDIRA WC FIN.pdf",
     "tipo": "Trabajo de Diploma"
   },
-  {
-    "id": 49,
-    "tema": "",
-    "autor": ", Dayana",
-    "año": 2018,
-    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
-    "descarga": "/tesis/tesisss final Dayana Santrayll/cuerpo final_Old1.pdf",
-    "tipo": "Trabajo de Diploma"
-  },
-  {
-    "id": 50,
-    "tema": "",
-    "autor": ", heidy",
-    "año": 2018,
-    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
-    "descarga": "/tesis/trabajo de diploma/Heidy.pdf",
-    "tipo": "Trabajo de Diploma"
-  }
-  ,
   {
     "id": 51,
     "tema": "El mutismo selectivo. Barrera para la comunicación y el lenguaje en niños de 4to y 5to año de vida",
@@ -601,6 +564,105 @@
     "año": 2018,
     "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
     "descarga": "/tesis/Trabajo de dipoma Lorell Caballero.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 68,
+    "tema": "-Sin tiulo",
+    "autor": "Chile, Diana",
+    "año": 2018,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/diana chileTesis paginada Final.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 69,
+    "tema": "Estudio de caso a un educando con un retraso simple del lenguaje asociado al trastorno del espectro autista",
+    "autor": "Iglesias Hernández, Karla",
+    "año": 2021,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/E. Caso Karla Iglesias, Log 2021.pdf",
+    "tipo": "Examen Estatal"
+  },
+  {
+    "id": 70,
+    "tema": "-Sin tiulo",
+    "autor": "-Sin autor",
+    "año": 2021,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Introducción, desarrollo, conclusiones.pdf",
+    "tipo": "Examen Estatal"
+  },
+  {
+    "id": 71,
+    "tema": "-Sin tiulo",
+    "autor": "Díaz, Daniela",
+    "año": 2021,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Informe Culminac est Daniela Díaz.pdf",
+    "tipo": "Examen Estatal"
+  },
+  {
+    "id": 72,
+    "tema": "Estudio de caso escolar que presenta un retraso del lenguaje, asociado a una discapacidad intelectual ",
+    "autor": "Reyes Jiménez, Adriana Lisbeyis",
+    "año": 2020,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Estudio de Caso ADRIANA 5TO AÑO.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 73,
+    "tema": "La orientación a la familia de escolares sordos con implante coclear",
+    "autor": "Degny Saborit, Jiulis",
+    "año": 2018,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Jiulis.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 74,
+    "tema": "La estimulación de la comunicación en escolares con limitaciones físico-motoras asociadas a la disartria",
+    "autor": "Porcel Escalona, Laura",
+    "año": 2018,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/lauratesislista.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 75,
+    "tema": "El desarrollo de la lengua de señas cubana desde la asignatura Ciencias Naturales con estudiantes sordos de 5to grado",
+    "autor": "Díaz Martínez, Maurin",
+    "año": 2021,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TD Maurin Díaz Mtnez, 4to Log 2021.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 76,
+    "tema": "Estrategias  de comunicación aumentativa en la educación de los niños con sordoceguera de la primera infancia",
+    "autor": "González Negrín, Elisabel de las Mercedes",
+    "año": 2014,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TDElizabeth.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 77,
+    "tema": "La expresión corporal en la estimulación del lenguaje en los educandos con Trastorno del Espectro de Autismo",
+    "autor": "Martínez Álvarez, Yaimara",
+    "año": 2020,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Tesis finalizada Yaimara completica OK.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 78,
+    "tema": "La fotografía digital como vía para el desarrollo del componente léxico en escolares con discapacidad intelectual",
+    "autor": "Matos Avilés, Jessica",
+    "año": 2018,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Tesis Jessica nueva5.pdf",
     "tipo": "Trabajo de Diploma"
   }
 ]

@@ -12,7 +12,7 @@ export default function TesisConsultadasPage() {
         <h1 className="hero__title" style={{ fontSize: 'clamp(2rem, 6vw, 4rem)' }}>
           Bibliografía
         </h1>
-        <p className="hero__sub">Tesis consultadas durante la investigación doctoral</p>
+        <p className="hero__sub">Tesis consultadas durante la investigación</p>
       </header>
 
       <TesisList
