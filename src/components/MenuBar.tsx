@@ -12,6 +12,7 @@ const MenuBar = () => {
     { path: '/introduccion', label: 'Introducción' },
     { path: '/trastornosComOral', label: 'Trastornos de la comunicación oral' },
     { path: '/procederMetodologico', label: 'Proceder Metodológico' },
+    { path: '/estrategiasRecursos', label: 'Estrategias y recursos logopédicos' },
     { path: '/resultados', label: 'Resultados' },
     { path: '/tesis_consultadas', label: 'Bibliografía' },
     { path: '/conclusiones', label: 'Conclusiones' },
