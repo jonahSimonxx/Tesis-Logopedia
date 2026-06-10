@@ -26,7 +26,18 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className={`${italiana.variable} ${dmSans.variable}`}>
+    <html
+      lang="es"
+      className={`${italiana.variable} ${dmSans.variable}`}
+      suppressHydrationWarning
+    >
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('glass-theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className={dmSans.className}>
         {/* Fondo animado del kit */}
         <div className="scene" aria-hidden="true">
