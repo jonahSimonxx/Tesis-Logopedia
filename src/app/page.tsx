@@ -6,7 +6,7 @@ export default function Home() {
       <header className="hero">
         <span className="hero__kicker">Tesis Doctoral en Logopedia</span>
         <h1 className="hero__title">
-          Trastornos de la comunicación oral en perspectiva:
+          Trastornos de la comunicación oral:
           <br />
           una década de estudios
         </h1>
