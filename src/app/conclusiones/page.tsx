@@ -19,59 +19,46 @@ export default function Conclusiones() {
         >
           <div className="prose">
             <p>
-              El análisis sistemático de las tesis consultadas en el período
-              2015-2025 permite establecer las siguientes conclusiones.
+              <strong>1.</strong> La sistematización de los referentes teóricos y
+              metodológicos que sustentan el desarrollo de la comunicación oral y
+              sus trastornos revela la importancia de su abordaje desde una
+              perspectiva integral, interdisciplinaria y contextualizada. Autores
+              como Piaget, Vygotsky y Luria, entre otros, permiten comprender la
+              comunicación oral como un proceso dinámico, bidireccional y esencial
+              para el desarrollo cognitivo, social y educativo de la persona;
+              desde un enfoque científico, inclusivo y colaborativo de los avances
+              de la investigación, la experiencia educativa y el marco legal
+              vigente.
             </p>
             <p>
-              <strong>En primer lugar</strong>, los referentes teóricos que
-              sustentan el estudio de los trastornos de la comunicación oral en
-              la infancia se articulan predominantemente en torno al enfoque
-              histórico-cultural de Vygotsky, complementado por la teoría
-              dialéctico-materialista y el enfoque cognitivo comunicativo. Dichos
-              marcos conceptualizan el lenguaje como un fenómeno biopsicosocial y
-              contextualizado, donde la mediación social y la actividad
-              compartida constituyen ejes fundamentales para la intervención
-              logopédica.
+              <strong>2.</strong> El estudio revela que los trastornos más
+              estudiados, entre los años 2015-2025, se hallan: la dislalia
+              funcional; el retraso del lenguaje; los trastornos de la fluidez (la
+              tartamudez); la disglosia (asociada a malformaciones anatómicas) y
+              los trastornos de la comunicación en educandos sordos.
             </p>
             <p>
-              <strong>En segundo lugar</strong>, los trastornos de mayor
-              prevalencia identificados en las investigaciones revisadas son la
-              dislalia funcional, la rinolalia, la disartria, el retraso simple
-              del lenguaje, la tartamudez y el tartaleo. Cada uno de estos
-              trastornos presenta una etiología y manifestaciones clínicas
-              particulares, lo que exige procedimientos diagnósticos
-              diferenciados y planes de intervención individualizados.
+              <strong>3.</strong> Entre las estrategias principales identificadas
+              se sitúan: el enfoque lúdico; la intervención multisensorial; la
+              personalización de las actividades; la participación activa de la
+              familia y la escuela; la colaboración entre logopedas, familia y
+              docentes es clave para el éxito de la intervención. Se promueve la
+              utilización de la tecnología y recursos digitales; así como técnicas
+              de modelado, materiales didácticos adaptados, juegos de mesa y
+              actividades grupales y de refuerzo positivo, que favorecen la
+              adquisición y generalización de habilidades para la comunicación
+              oral.
             </p>
             <p>
-              <strong>En tercer lugar</strong>, las estrategias de intervención
-              con mayor respaldo empírico incluyen el enfoque lúdico, la
-              estimulación multisensorial, la personalización de las actividades,
-              la participación activa de la familia y la escuela, así como la
-              incorporación progresiva de recursos tecnológicos. Los resultados
-              reportados evidencian mejoras en la inteligibilidad del habla, la
-              amplitud léxica, la fluidez comunicativa y el bienestar emocional
-              de los educandos.
-            </p>
-            <p>
-              No obstante, la comparación entre el primer quinquenio (2015-2019)
-              y el segundo (2020-2025) revela la persistencia de vacíos
-              metodológicos: ausencia de seguimiento a largo plazo, limitaciones
-              en el acceso a tecnologías en contextos rurales, formación
-              insuficiente del profesorado y escasa atención a grupos en
-              situación de vulnerabilidad múltiple.
-            </p>
-            <p>
-              Como aporte práctico derivado de la investigación, se desarrolló un
-              sitio web especializado que centraliza y difunde las tesis
-              consultadas. Dicho recurso facilita la consulta, la descarga de
-              documentos y la actualización del conocimiento, beneficiando a
-              estudiantes, docentes, logopedas, investigadores y familias.
-            </p>
-            <p>
-              Finalmente, se concluye que la atención logopédica a los trastornos
-              de la comunicación oral en la infancia requiere un enfoque
-              interdisciplinario, temprano e inclusivo, sustentado en marcos
-              legales que garantizan la igualdad de oportunidades.
+              <strong>4.</strong> El sitio web: Trastornos de la comunicación
+              oral: una década de estudios, un apoyo especializado que fortalece
+              la formación académica, la práctica profesional y la participación
+              social. Este recurso no solo responde a las exigencias de la
+              transformación digital, sino que también consolida la identidad del
+              campo de la logopedia en Cuba y en el mundo, contribuyendo a la
+              inclusión, al fortalecimiento de la investigación y a la mejora de
+              la calidad de vida de los educandos con trastornos de la
+              comunicación oral.
             </p>
           </div>
         </div>
