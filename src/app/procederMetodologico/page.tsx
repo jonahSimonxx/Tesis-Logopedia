@@ -27,7 +27,7 @@ export default function ProcederMetodologico() {
     <div className="results">
       {/* Cabecera */}
       <header className="results__header">
-        <span className="hero__kicker">Capítulo 2 · Metodología</span>
+        <span className="hero__kicker">Metodología</span>
         <h1 className="results__title">Proceder Metodológico</h1>
         <div className="results__rule" />
         <p
