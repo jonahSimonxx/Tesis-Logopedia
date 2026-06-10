@@ -26,7 +26,6 @@ export default function Home() {
 
           <div className="card-grid">
             <Link href="/introduccion" className="glass glass-card">
-              <div className="glass-card__label">Capítulo 1</div>
               <h3 className="glass-card__title">Introducción</h3>
               <p className="glass-card__body">
                 Contexto, justificación y objetivos de la tesis.
@@ -37,7 +36,6 @@ export default function Home() {
             </Link>
 
             <Link href="/trastornosComOral" className="glass glass-card">
-              <div className="glass-card__label">Capítulo 2</div>
               <h3 className="glass-card__title">
                 Fichas descriptivas de los principales trastornos de la
                 comunicación oral
@@ -52,7 +50,6 @@ export default function Home() {
             </Link>
 
             <Link href="/procederMetodologico" className="glass glass-card">
-              <div className="glass-card__label">Capítulo 3</div>
               <h3 className="glass-card__title">Proceder Metodológico</h3>
               <p className="glass-card__body">
                 Diseño de investigación, participantes e instrumentos.
@@ -63,7 +60,6 @@ export default function Home() {
             </Link>
 
             <Link href="/estrategiasRecursos" className="glass glass-card">
-              <div className="glass-card__label">Capítulo 4</div>
               <h3 className="glass-card__title">
                 Estrategias y recursos logopédicos
               </h3>
@@ -76,7 +72,6 @@ export default function Home() {
             </Link>
 
             <Link href="/resultados" className="glass glass-card">
-              <div className="glass-card__label">Capítulo 5</div>
               <h3 className="glass-card__title">Resultados</h3>
               <p className="glass-card__body">
                 Análisis de datos y hallazgos principales.
@@ -87,7 +82,6 @@ export default function Home() {
             </Link>
 
             <Link href="/conclusiones" className="glass glass-card">
-              <div className="glass-card__label">Cierre</div>
               <h3 className="glass-card__title">Conclusiones</h3>
               <p className="glass-card__body">
                 Síntesis de los hallazgos y proyecciones de la investigación.
