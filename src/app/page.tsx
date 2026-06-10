@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <header className="hero">
-        <span className="hero__kicker">Tesis Doctoral en Logopedia</span>
+        <span className="hero__kicker">Trabajo de Diploma</span>
         <h1 className="hero__title">
           Trastornos de la comunicación oral:
           <br />
