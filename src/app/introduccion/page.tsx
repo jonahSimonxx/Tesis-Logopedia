@@ -28,7 +28,7 @@ export default function Introduccion() {
     <div className="results">
       {/* Cabecera de bienvenida */}
       <header className="results__header">
-        <span className="hero__kicker">Capítulo 1 · Bienvenida</span>
+        <span className="hero__kicker">Bienvenida</span>
         <h1 className="results__title">Bienvenidos a nuestro sitio web</h1>
         <div className="results__rule" />
         <p
