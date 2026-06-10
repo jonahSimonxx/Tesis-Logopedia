@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
+import BackToHome from '@/components/BackToHome';
 
 export default function Introduccion() {
   const [openSections, setOpenSections] = useState<Set<string>>(
@@ -97,6 +98,8 @@ export default function Introduccion() {
           </Link>
         </div>
       </div>
+
+      <BackToHome />
     </div>
   );
 }

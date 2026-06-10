@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import BackToHome from '@/components/BackToHome';
 
 export default function TrastornosComOral() {
   const [openSections, setOpenSections] = useState<Set<string>>(
@@ -27,7 +28,10 @@ export default function TrastornosComOral() {
       {/* Cabecera */}
       <header className="results__header">
         <span className="hero__kicker">Marco teórico</span>
-        <h1 className="results__title">Trastornos de la comunicación oral</h1>
+        <h1 className="results__title">
+          Fichas descriptivas de los principales trastornos de la comunicación
+          oral
+        </h1>
         <div className="results__rule" />
         <p
           className="hero__sub"
@@ -73,6 +77,8 @@ export default function TrastornosComOral() {
           );
         })}
       </div>
+
+      <BackToHome />
     </div>
   );
 }

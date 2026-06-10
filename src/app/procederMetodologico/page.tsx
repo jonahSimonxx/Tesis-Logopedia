@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import BackToHome from '@/components/BackToHome';
 
 export default function ProcederMetodologico() {
   const [openSections, setOpenSections] = useState<Set<string>>(
@@ -73,6 +74,8 @@ export default function ProcederMetodologico() {
           );
         })}
       </div>
+
+      <BackToHome />
     </div>
   );
 }

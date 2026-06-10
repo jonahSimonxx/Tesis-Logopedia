@@ -1,3 +1,5 @@
+import BackToHome from '@/components/BackToHome';
+
 export default function Conclusiones() {
   return (
     <div className="results">
@@ -74,6 +76,8 @@ export default function Conclusiones() {
           </div>
         </div>
       </div>
+
+      <BackToHome />
     </div>
   );
 }
