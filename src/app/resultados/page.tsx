@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ChevronDown } from 'lucide-react';
+import BackToHome from '@/components/BackToHome';
 
 export default function AnalisisResultados() {
   const [openSections, setOpenSections] = useState<Set<string>>(new Set());
@@ -64,6 +65,8 @@ export default function AnalisisResultados() {
           );
         })}
       </div>
+
+      <BackToHome />
     </div>
   );
 }
