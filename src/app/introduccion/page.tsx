@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 import BackToHome from '@/components/BackToHome';
 
@@ -74,29 +73,6 @@ export default function Introduccion() {
             </div>
           );
         })}
-      </div>
-
-      {/* Lema de cierre */}
-      <div className="glass intro-tagline">
-        <div className="intro-tagline__cta">
-          Explora, descarga, aprende y comparte
-        </div>
-        <p className="intro-tagline__quote">
-          La comunicación oral es un derecho.
-          <br />
-          La información, una herramienta.
-        </p>
-        <div className="hero__cta" style={{ marginTop: '24px' }}>
-          <Link
-            href="/tesis_consultadas"
-            className="glass glass-btn glass-btn--primary"
-          >
-            Ver Bibliografía →
-          </Link>
-          <Link href="/resultados" className="glass glass-btn glass-btn--ghost">
-            Ver Resultados
-          </Link>
-        </div>
       </div>
 
       <BackToHome />

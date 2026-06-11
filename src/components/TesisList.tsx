@@ -11,7 +11,6 @@ interface TesisListProps {
 }
 
 export default function TesisList({ tesis, onConsultarTesis, onDescargarTesis }: TesisListProps) {
-  const [searchTerm, setSearchTerm] = useState('')
   const [añoFiltro, setAñoFiltro] = useState('todos')
   const [tipoFiltro, setTipoFiltro] = useState('todos')
 
@@ -19,19 +18,12 @@ export default function TesisList({ tesis, onConsultarTesis, onDescargarTesis }:
   const tiposUnicos = Array.from(new Set(tesis.map((t) => t.tipo)))
 
   const tesisFiltradas = tesis.filter((item) => {
-    const searchLower = searchTerm.toLowerCase()
-    const matchesSearch =
-      searchTerm === '' ||
-      item.tema.toLowerCase().includes(searchLower) ||
-      item.autor.toLowerCase().includes(searchLower) ||
-      item.universidad.toLowerCase().includes(searchLower)
     const matchesYear = añoFiltro === 'todos' || item.año.toString() === añoFiltro
     const matchesType = tipoFiltro === 'todos' || item.tipo === tipoFiltro
-    return matchesSearch && matchesYear && matchesType
+    return matchesYear && matchesType
   })
 
   const limpiarFiltros = () => {
-    setSearchTerm('')
     setAñoFiltro('todos')
     setTipoFiltro('todos')
   }
@@ -40,20 +32,16 @@ export default function TesisList({ tesis, onConsultarTesis, onDescargarTesis }:
     <div className="space-y-8">
       {/* Panel de filtros estilo Glass */}
       <div className="glass glass-form" style={{ padding: '24px' }}>
-        <div className="glass-form__row" style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-          <div style={{ flex: '2 1 250px' }}>
-            <div className="glass-table-search">
-              <span className="glass-table-search__icon">🔍</span>
-              <input
-                type="search"
-                placeholder="Buscar por tema, autor o universidad..."
-                className="glass-table-search__input"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                style={{ width: '100%' }}
-              />
-            </div>
-          </div>
+        <div
+          className="glass-form__row"
+          style={{
+            display: 'flex',
+            gap: '16px',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
           <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
             <select
               className="glass-select"
@@ -80,24 +68,21 @@ export default function TesisList({ tesis, onConsultarTesis, onDescargarTesis }:
               ))}
             </select>
           </div>
-        </div>
 
-        <div
-          className="glass-form__row"
-          style={{ justifyContent: 'space-between', marginTop: '16px' }}
-        >
-          <span>
-            Mostrando <strong>{tesisFiltradas.length}</strong> de <strong>{tesis.length}</strong>{' '}
-            tesis
-          </span>
-          {(searchTerm || añoFiltro !== 'todos' || tipoFiltro !== 'todos') && (
-            <button
-              onClick={limpiarFiltros}
-              className="glass glass-btn glass-btn--ghost glass-btn--sm"
-            >
-              Limpiar filtros
-            </button>
-          )}
+          <div style={{ display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
+            <span>
+              Mostrando <strong>{tesisFiltradas.length}</strong> de <strong>{tesis.length}</strong>{' '}
+              tesis
+            </span>
+            {(añoFiltro !== 'todos' || tipoFiltro !== 'todos') && (
+              <button
+                onClick={limpiarFiltros}
+                className="glass glass-btn glass-btn--ghost glass-btn--sm"
+              >
+                Limpiar filtros
+              </button>
+            )}
+          </div>
         </div>
       </div>
 
@@ -117,7 +102,7 @@ export default function TesisList({ tesis, onConsultarTesis, onDescargarTesis }:
       {tesisFiltradas.length === 0 && (
         <div className="glass glass-card" style={{ textAlign: 'center' }}>
           <div className="glass-card__title">No se encontraron tesis</div>
-          <p className="glass-card__body">Prueba con otros términos de búsqueda</p>
+          <p className="glass-card__body">Prueba con otros filtros</p>
           <button onClick={limpiarFiltros} className="glass glass-btn glass-btn--primary">
             Limpiar filtros
           </button>
