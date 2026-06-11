@@ -664,5 +664,59 @@
     "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
     "descarga": "/tesis/Tesis Jessica nueva5.pdf",
     "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 79,
+    "tema": "La orientación familiar para el desarrollo del lenguaje de los educandos de cuarto grado con discapacidad intelectual",
+    "autor": "García López, Sandra Stephany",
+    "año": 2020,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/Texto científico Sandra.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 80,
+    "tema": "Folleto de actividades para la estimulación del neurodesarrollo en escolares con discapacidad intelectual",
+    "autor": "Álvarez Suárez, Camila",
+    "año": 2018,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TESIS Camila.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 81,
+    "tema": "Estrategia de comunicación aumentativa para un educando con limitaciones físico-motoras y anartria",
+    "autor": "Arzuaga Manso, Lidersy",
+    "año": 2014,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TDLidersy.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 82,
+    "tema": "Adaptaciones de pictogramas como vía de comunicación aunmentativa en niños con trastorno del espectro autista",
+    "autor": "Cuan Quintero, Elena",
+    "año": 2018,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TDelena cuan quinteiro.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 83,
+    "tema": "El desarrollo del lenguaje oral en educandos con parálisis cerebral en la edad escolar",
+    "autor": "Díaz Rodríguez, Daylí",
+    "año": 2021,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TD Daylì Dìaz Rguez, 4to Log 2021.pdf",
+    "tipo": "Trabajo de Diploma"
+  },
+  {
+    "id": 84,
+    "tema": "El español como segunda lengua en educandos sordos que cursan el quinto grado",
+    "autor": "Acosta Suárez, Laura",
+    "año": 2021,
+    "universidad": "Universidad de Ciencias Pedagógicas Enrique José Varona",
+    "descarga": "/tesis/TD Laura Acosta Suárez, 4to Log 2021 .pdf",
+    "tipo": "Trabajo de Diploma"
   }
 ]
